@@ -1,0 +1,20 @@
+[package]
+name = "sandpit"
+version = "0.0.1"
+
+[[bin]]
+name = "sandpit"
+path = "main.rs"
+
+[dependencies.layers]
+path = "../rust-layers"
+
+[dependencies.gleam]
+git = "https://github.com/servo/gleam"
+
+[dependencies.geom]
+git = "https://github.com/servo/rust-geom"
+
+[dependencies]
+glutin = "*"
+x11 = "*"
